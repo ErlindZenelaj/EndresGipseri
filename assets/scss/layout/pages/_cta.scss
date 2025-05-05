@@ -1,0 +1,377 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+.cta1-section-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/all-images/bg/cta-bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cta-header {
+        h2 {
+            color: var(--ztc-text-text-1);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s44);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 52px;  
+            @media #{$xs} {
+                font-size: var(--ztc-font-size-font-s32);
+                line-height: 40px;
+            }  
+        }
+    }
+    .btn-area {
+        text-align: end;
+        @media #{$md} {
+            text-align: start;
+            padding-top: 30px;
+        }
+        .header-btn2 {
+            color: var(--ztc-text-text-1);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s18);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 18px;
+            display: inline-block;
+            transition: all .4s;
+            border: 1px solid #fff;
+            padding: 15px 20px;
+            position: relative;
+            z-index: 1;
+            margin-left: 16px;
+            @media #{$xs} {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            i {
+                margin-left: 4px;
+                transform: rotate(-45deg);
+                transition: all .4s;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 10px;
+                left: 50%;
+                right: 50%;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-2);
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0;
+                top: 0;
+            }
+            &:hover {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+                border: 1px solid var(--ztc-text-text-2);
+                &::after {
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    transition: all .4s;
+                    visibility: visible;
+                    opacity: 1;
+                }
+                i {
+                    transform: rotate(0);
+                    transition: all .4s;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.cta2-section-area{
+    position: relative;
+    z-index: 2;
+    margin-bottom: -160px;
+    .cta-widget-bg {
+        background: var(--ztc-bg-bg-5);
+        position: relative;
+        padding: 24px 32px;
+        z-index: 1;
+        .img1 {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .heading4 {
+            padding: 0 0 0 50px;
+            @media #{$xs} {
+                padding: 0;
+                margin-top: 30px;
+            }
+            @media #{$md} {
+                padding: 0;
+                margin-top: 30px;
+            }
+            h2 {
+                color: var(--ztc-text-text-1);
+            }
+            .btn-area {
+                a.header-btn2-h2 {
+                    background: var(--ztc-bg-bg-1);
+                    color: var(--ztc-text-text-5);
+                    &:hover {
+                        color: var(--ztc-text-text-1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.cta3-section-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/all-images/bg/cta-bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: var(--ztc-bg-bg-2);
+        transition: all .4s;
+        left: 0;
+        top: 0;
+        opacity: 50%;
+        z-index: -1;
+    }
+    .cta-header {
+        h2 {
+            color: var(--ztc-text-text-1);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s44);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 52px;  
+            @media #{$xs} {
+                font-size: var(--ztc-font-size-font-s30);
+                line-height: 40px;
+            }  
+        }
+    }
+    .btn-area {
+        text-align: end;
+        @media #{$xs} {
+            text-align: start;
+            margin-top: 30px;
+        }
+        @media #{$md} {
+            text-align: start;
+            padding-top: 30px;
+        }
+        .header-btn2-h3.btn2 {
+            color: var(--ztc-text-text-1);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s18);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 18px;
+            display: inline-block;
+            transition: all .4s;
+            border: 1px solid #fff;
+            position: relative;
+            z-index: 1;
+            background: none;
+            margin-left: 16px;
+            @media #{$xs} {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            i {
+                transform: rotate(-45deg);
+                transition: all .4s;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 10px;
+                left: 50%;
+                right: 50%;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-6);
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0;
+                top: 0;
+            }
+            &:hover {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+                border: 1px solid var(--ztc-text-text-6);
+                &::after {
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    transition: all .4s;
+                    visibility: visible;
+                    opacity: 1;
+                }
+                i {
+                    transform: rotate(0);
+                    transition: all .4s;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 04 //
+.cta4-section-area {
+    position: relative;
+    z-index: 1;
+    .img1 {
+        img {
+            height: 305px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+
+    .cta-form-area {
+        background: var(--ztc-bg-bg-7);
+        border-radius: 4px;
+        position: relative;
+        z-index: 1;
+        padding: 32px 110px 32px 32px;
+        @media #{$md} {
+            padding: 32px 70px 32px 32px;
+        }
+        @media #{$xs} {
+            padding: 24px;
+        }
+        h2 {
+            color: var(--ztc-text-text-2);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s32);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 38px; 
+            transition: all .4s;          
+        }
+        p {
+            color: var(--Paragraph-Color, #6C757D);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s16);
+            font-style: normal;
+            font-weight: var(--ztc-weight-medium);
+            line-height: 16px;
+            @media #{$xs} {
+                line-height: 26px;
+            }           
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            input {
+                color: var(--Paragraph-Color, #6C757D);
+                font-family: var(--ztc-family-font1);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px; 
+                border-radius: 52px;
+                background: #FFF;
+                padding: 18px; 
+                width: 415px;   
+                @media #{$xs} {
+                    width: 100%;
+                }        
+            }
+            button {
+                position: absolute;
+                right: 0;
+                border-radius: 1px solid var(--ztc-text-text-2);
+                border-radius: 50px;
+                @media #{$xs} {
+                    position: relative;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 05 //
+.cta5-section-area  {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/all-images/bg/cta-bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cta-header {
+        h2 {
+            color: #FFF;
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s44);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 52px; 
+            @media #{$xs} {
+                font-size: var(--ztc-font-size-font-s32);
+                line-height: 40px;
+            }            
+        }
+    }
+
+    .cta-input-area {
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            input {
+                border-radius: 52px;
+                background: #FFF;
+                color: var(--Paragraph-Color, #6C757D);
+                font-family: var(--ztc-family-font1);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; 
+                padding: 17px 18px;
+                width: 350px; 
+                @media #{$xs} {
+                    width: 100%;
+                }
+                &::placeholder {
+                    color: var(--Paragraph-Color, #6C757D);
+                    font-family: var(--ztc-family-font1);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                }                              
+            }
+            button {
+                border: none;
+                margin-left: 16px;
+                @media #{$xs} {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+/*============= CTA CSS AREA ENDS===============*/

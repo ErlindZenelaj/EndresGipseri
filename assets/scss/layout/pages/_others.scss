@@ -1,0 +1,587 @@
+@use '../../utils/' as * ;
+
+/*============= OTHERS CSS AREA STARTS ===============*/
+
+// preloader //
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999999999;
+	background-color: var(--ztc-text-text-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.preloader2{
+    background: var(--ztc-bg-bg-2) !important;
+}
+.preloader3{
+    background: var(--ztc-text-text-6) !important;
+}
+.preloader4{
+    background: var(--ztc-text-text-2) !important;
+}
+.preloader5{
+  background: var(--ztc-text-text-8) !important;
+}
+.loading-container,
+.loading{
+	height: 120px;
+	position: relative;
+	width: 120px;
+	border-radius: 100%;
+}
+
+.loading-container{
+	margin: 40px auto
+}
+
+.loading{
+	border: 1px solid transparent;
+	border-color: transparent var(--ztc-text-text-1) transparent var(--ztc-text-text-1);
+	animation: rotate-loading 1.5s linear 0s infinite normal;
+	transform-origin: 50% 50%;
+}
+.preloader2 {
+    .loading {
+        border-color: transparent var(--ztc-text-text-5) transparent var(--ztc-text-text-5) !important;
+        border: 1px solid transparent;
+        animation: rotate-loading 1.5s linear 0s infinite normal;
+        transform-origin: 50% 50%;
+    }
+}
+.preloader3 {
+    .loading {
+        border-color: transparent var(--ztc-text-text-1) transparent var(--ztc-text-text-1) !important;
+        border: 1px solid transparent;
+        animation: rotate-loading 1.5s linear 0s infinite normal;
+        transform-origin: 50% 50%;
+    }
+}
+.preloader4 {
+    .loading {
+        border-color: transparent var(--ztc-text-text-7) transparent var(--ztc-text-text-7) !important;
+        border: 1px solid transparent;
+        animation: rotate-loading 1.5s linear 0s infinite normal;
+        transform-origin: 50% 50%;
+    }
+}
+
+.preloader5 {
+  .loading {
+      border-color: transparent var(--ztc-text-text-1) transparent var(--ztc-text-text-1) !important;
+      border: 1px solid transparent;
+      animation: rotate-loading 1.5s linear 0s infinite normal;
+      transform-origin: 50% 50%;
+  }
+}
+.loading-container:hover .loading,
+.loading-container .loading{
+	transition: all 0.5s ease-in-out;
+}
+
+#loading-icon{
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    height: 70px;
+    width: 60px;
+}
+
+@keyframes rotate-loading{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/* END: Preloader */
+.progress-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 200ms linear;
+  }
+  .progress-wrap:hover {
+    background: var(--ztc-text-text-2);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px 0 var(--ztc-text-text-16);
+    transition: all 0.4s ease-in-out;
+    color: var(--ztc-text-text-1);
+  }
+  
+  .progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .progress-wrap::after {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f062";
+    text-align: center;
+    line-height: 56px;
+    font-size: 18px;
+    color: var(--ztc-text-text-2);
+    left: 0;
+    top: 0;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::after {
+    opacity: 0;
+  }
+  
+  .progress-wrap::before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f062";
+    text-align: center;
+    line-height: 56px;
+    font-size: 18px;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .progress-wrap svg path {
+    fill: none;
+  }
+  
+  .progress-wrap svg.progress-circle path {
+    stroke: var(--ztc-text-text-2);
+    stroke-width: 4;
+    box-sizing: border-box;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .star2 {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .star3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+/*============= OTHERS CSS AREA ENDS ===============*/
+.others3-slider-area {
+  position: relative;
+  z-index: 1;
+  background: #F6F8FA;
+  .heading2 {
+    h3 {
+      color: var(--Text-Color, #03071E);
+      text-align: center;
+      font-family: var(--ztc-family-font1);
+      font-size: var(--ztc-font-size-font-s20);
+      font-style: normal;
+      font-weight: var(--ztc-weight-semibold);
+      line-height: 20px; 
+      transition: all .4s;  
+    }
+  }
+  .slider3-area {
+    .img1 {
+      height: 40px;
+      width: 120px;
+      object-fit: contain;
+      img {
+        height: 40px;
+        width: 120px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.others4-slider-area1 {
+  .others4-slider-area {
+    position: relative;
+    bottom: 185px;
+    z-index: 1;
+    @media #{$md} {
+      bottom: 0;
+    }
+    @media #{$xs} {
+      bottom: 0;
+    }
+    .owl-stage-outer {
+      position: absolute !important;
+    }
+    .img1 {
+      height: 40px;
+      width: 120px;
+      object-fit: contain;
+      img {
+        height: 40px;
+        width: 120px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+/*============= PRICING CSS AREA STARTS ===============*/
+
+/*============= HISTORY CSS AREA STARTS ===============*/
+.history-section-area {
+  position: relative;
+  z-index: 1;
+  .history-details-boxarea {
+    padding: 0 50px 0 0;
+    @media #{$xs} {
+      padding: 0;
+    }
+    @media #{$md} {
+      padding: 0;
+    }
+    .history-boxes {
+      position: relative;
+      padding-bottom: 32px;
+      border-bottom: 1px dashed var(--ztc-text-text-3);
+      margin-bottom: 30px;
+      @media #{$xs} {
+        margin-bottom: 30px;
+        border: 1px dashed var(--ztc-text-text-3) !important;
+        padding: 16px !important;
+        border-radius: 4px;
+      }
+      @media #{$md} {
+        margin-bottom: 30px;
+      }
+      span {
+        color: var(--Text-Color, #03071E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 16px; 
+        display: inline-block;
+        transition: all .4s;     
+      }
+      a {
+        color: var(--Text-Color, #03071E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s20);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 20px;  
+        transition: all .4s;  
+        display: inline-block;
+        &:hover {
+          color: var(--ztc-text-text-4);
+          transition: all .4s;
+        }
+      }
+      p {
+        color: var(--Paragraph-Color, #6C757D);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 26px; 
+        display: inline-block;        
+      }
+      .readmore {
+        color: var(--Text-Color, #03071E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 16px; 
+        display: inline-block;
+        transition: all .4s;
+        i {
+          margin-left: 4px;
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          color: var(--ztc-text-text-4);
+          transition: all .4s;
+        }
+      }
+    }
+  }
+  .img1 {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+}
+/*============= VALUE CSS AREA STARTS ===============*/
+.value-section-area {
+  position: relative;
+  z-index: 1;
+  .value-details-box {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .4s;
+    border-radius: 4px;
+    .img1 {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        @media #{$xs} {
+          height: 470px;
+        }
+      }
+    }
+    .content-area {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      padding: 24px;
+      h3 {
+        font-size: var(--ztc-font-size-font-s32);
+        line-height: 40px;
+      }
+    }
+  }
+  .value-boxs-area {
+    padding: 0 0 0 30px;
+    @media #{$xs} {
+      margin-top: 30px;
+      padding: 0;
+    }
+    @media #{$md} {
+      margin-top: 30px;
+      padding: 0;
+    }
+    .value-box {
+      background: #FDC4B4;
+      position: relative;
+      padding: 24px;
+      border-radius: 4px;
+      .arrow {
+        text-align: end;
+        a {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          transition: all .4s;
+          background: #FC501D;
+          display: inline-block;
+          transition: all .4s;
+          color: var(--ztc-text-text-1);
+          transform: rotate(-45deg);
+        }
+      }
+      h5 {
+        color: var(--1st-Main, #FC501D);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s18);
+        font-style: normal;
+        font-weight: var(--ztc-weight-semibold);
+        line-height: 18px;    
+        display: inline-block; 
+      }
+      a {
+        color: var(--Text-Color, #03071E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s20);
+        font-style: normal;
+        font-weight: var(--ztc-weight-medium);
+        line-height: 26px; 
+        display: inline-block;
+        transition: all .4s;       
+      }
+      p {
+        color: var(--colors-dark-normal-active, #3D4C5E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 26px;        
+      }
+    }
+
+    .value-box2 {
+      background: #CFDFFF;
+      position: relative;
+      padding: 24px;
+      border-radius: 4px;
+      .arrow {
+        text-align: end;
+        a {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          transition: all .4s;
+          background: #1063FF;
+          display: inline-block;
+          transition: all .4s;
+          color: var(--ztc-text-text-1);
+          transform: rotate(-45deg);
+        }
+      }
+      h5 {
+        color: var(--1st-Main, #1063FF);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s18);
+        font-style: normal;
+        font-weight: var(--ztc-weight-semibold);
+        line-height: 18px;    
+        display: inline-block; 
+      }
+      a {
+        color: var(--Text-Color, #03071E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s20);
+        font-style: normal;
+        font-weight: var(--ztc-weight-medium);
+        line-height: 26px; 
+        display: inline-block;
+        transition: all .4s;       
+      }
+      p {
+        color: var(--colors-dark-normal-active, #3D4C5E);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 26px;        
+      }
+    }
+  }
+}
+/*============= CHOOSE CSS AREA ENDS ===============*/
+
+/*============= ERROR CSS AREA ENDS ===============*/ 
+
+/*============= ERROR CSS AREA ENDS ===============*/
+.pagination-area {
+  text-align: center;
+  margin-top: 20px;
+  ul {
+    justify-content: center;
+    li {
+      box-shadow: none;
+      a {
+        height: 50px;
+        width: 50px;
+        border: none;
+        background: #fff;
+        display: inline-block;
+        transition: all .4s;
+        border-radius: 4px;
+        box-shadow: none;
+        outline: none;
+        line-height: 50px !important;
+        padding: 0;
+        border: none;
+        color: var(--ztc-text-text-2);
+        text-align: center;
+        font-family: var(--ztc-family-font1);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin: 0 14px 0 0; 
+        &.active {
+          background: #FFAF01;
+          color: var(--ztc-text-text-2);
+        }
+        &:hover {
+          background: var(--ztc-text-text-4);
+          color: var(--ztc-text-text-2);
+          transition: all .4s;
+        }      
+      }
+    }
+  }
+}
+
+.pagination-area2 {
+  text-align: center;
+  margin-top: 20px;
+  ul {
+    justify-content: center;
+    li {
+      box-shadow: none;
+      a {
+        height: 50px;
+        width: 50px;
+        border: none;
+        background: #F9F9F9;
+        display: inline-block;
+        transition: all .4s;
+        border-radius: 4px;
+        box-shadow: none;
+        outline: none;
+        line-height: 50px !important;
+        padding: 0;
+        border: none;
+        color: var(--ztc-text-text-2);
+        text-align: center;
+        font-family: var(--ztc-family-font1);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin: 0 14px 0 0; 
+        &.active {
+          background: #FFAF01;
+          color: var(--ztc-text-text-2);
+        }
+        &:hover {
+          background: var(--ztc-text-text-4);
+          color: var(--ztc-text-text-2);
+          transition: all .4s;
+        }      
+      }
+    }
+  }
+}

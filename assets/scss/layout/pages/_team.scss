@@ -1,0 +1,475 @@
+@use '../../utils/' as * ;
+
+/*============= TEAM CSS AREA ===============*/
+// Homepage 02 //
+.team1-section-area {
+    position: relative;
+    z-index: 1;
+    background: #F6F6F6;
+
+    .team-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        text-align: center;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                &::after {
+                    visibility: visible;
+                    opacity: 0.6;
+                    transform: scale(1);
+                    transition: all .4s;
+                }
+                img {
+                    transform: scale(1.1) rotate(4deg);
+                    transition: all .4s;
+                }
+            }
+            ul {
+                visibility: visible;
+                opacity: 1;
+                top: 50%;
+                transition: all .6s;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-2);
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all .4s;
+            }
+        }
+        .content {
+            padding-top: 24px;
+            a {
+                color: var(--ztc-text-text-2);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;
+                display: inline-block; 
+                transition: all .4s; 
+                &:hover {
+                    color: var(--ztc-text-text-5);
+                    transition: all .4s;
+                }             
+            }
+            p {
+                color: var(--Paragraph-Color, #6C757D);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-medium);
+                line-height: 16px;               
+            }
+        }
+        ul {
+            position: absolute;
+            top: 30%;
+            z-index: 1;
+            left: 50%;
+            margin-left: -90px;
+            margin-top: -50px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .6s;
+            li {
+                display: inline-block;
+                a {
+                    height: 32px;
+                    width: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    background: var(--ztc-bg-bg-1);
+                    margin: 0 6px;
+                    &:hover {
+                        background: var(--ztc-bg-bg-5);
+                        color: var(--ztc-text-text-1);
+                        transition: all .4s;
+                    }
+                    i {
+                        font-size: var(--ztc-font-size-font-s16);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 04 //
+.team4-section-area {
+    position: relative;
+    z-index: 1;
+    .team-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        text-align: center;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                &::after {
+                    visibility: visible;
+                    opacity: 0.6;
+                    transform: scale(1);
+                    transition: all .4s;
+                }
+                img {
+                    transform: scale(1.1) rotate(4deg);
+                    transition: all .4s;
+                }
+            }
+            ul {
+                visibility: visible;
+                opacity: 1;
+                top: 50%;
+                transition: all .6s;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-2);
+                opacity: 0;
+                transform: scale(0.8);
+                border-radius: 4px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all .4s;
+                border-radius: 4px;
+            }
+        }
+        .content {
+            padding-top: 24px;
+            a {
+                color: var(--ztc-text-text-2);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;
+                display: inline-block; 
+                transition: all .4s; 
+                &:hover {
+                    color: var(--ztc-text-text-7);
+                    transition: all .4s;
+                }             
+            }
+            p {
+                color: var(--Paragraph-Color, #6C757D);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-medium);
+                line-height: 16px;               
+            }
+        }
+        ul {
+            position: absolute;
+            top: 30%;
+            z-index: 1;
+            left: 50%;
+            margin-left: -90px;
+            margin-top: -50px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .6s;
+            li {
+                display: inline-block;
+                a {
+                    height: 32px;
+                    width: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    background: var(--ztc-bg-bg-1);
+                    margin: 0 6px;
+                    &:hover {
+                        background: var(--ztc-bg-bg-7);
+                        color: var(--ztc-text-text-2);
+                        transition: all .4s;
+                    }
+                    i {
+                        font-size: var(--ztc-font-size-font-s16);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Inner Pages //
+.teaminner-section-area {
+    position: relative;
+    z-index: 1;
+
+    .team-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        text-align: center;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                &::after {
+                    visibility: visible;
+                    opacity: 0.6;
+                    transform: scale(1);
+                    transition: all .4s;
+                }
+                img {
+                    transform: scale(1.1) rotate(4deg);
+                    transition: all .4s;
+                }
+            }
+            ul {
+                visibility: visible;
+                opacity: 1;
+                top: 50%;
+                transition: all .6s;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                transition: all .4s;
+                background: var(--ztc-bg-bg-2);
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all .4s;
+            }
+        }
+        .content {
+            padding-top: 24px;
+            a {
+                color: var(--ztc-text-text-2);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;
+                display: inline-block; 
+                transition: all .4s; 
+                &:hover {
+                    color: var(--ztc-text-text-4);
+                    transition: all .4s;
+                }             
+            }
+            p {
+                color: var(--Paragraph-Color, #6C757D);
+                text-align: center;
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-medium);
+                line-height: 16px;               
+            }
+        }
+        ul {
+            position: absolute;
+            top: 30%;
+            z-index: 1;
+            left: 50%;
+            margin-left: -90px;
+            margin-top: -50px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .6s;
+            li {
+                display: inline-block;
+                a {
+                    height: 32px;
+                    width: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    background: var(--ztc-bg-bg-1);
+                    margin: 0 6px;
+                    &:hover {
+                        background: var(--ztc-text-text-4);
+                        color: var(--ztc-text-text-2);
+                        transition: all .4s;
+                    }
+                    i {
+                        font-size: var(--ztc-font-size-font-s16);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Single Inner pages //
+.team-single-section {
+    position: relative;
+    z-index: 1;
+    .bottom-content {
+        h3 {
+            color: var(--ztc-text-text-2);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s32);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            @media #{$xs} {
+                font-size: var(--ztc-font-size-font-s24);
+                line-height: 32px;
+            }            
+        }
+        P {
+            color: var(--ztc-text-text-3);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+         }
+    }
+    .team-single-boxarea {
+        background: #F6F8FA;
+        position: relative;
+        .img1 {
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .team-single-content {
+            padding: 32px 50px;
+            @media #{$xs} {
+                padding: 30px;
+            }
+            h4 {
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;      
+            }
+            p {
+                color: var(--Paragraph-Color, #6C757D);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;              
+            }
+            .star {
+                ul {
+                    li {
+                        display: inline-block;
+                        color: #FFAF01;
+                        &:nth-child(6) {
+                            color: var(--ztc-text-text-2);
+                        }
+                    }
+                }
+            }
+            .listarea {
+                ul {
+                    li {
+                        img {
+                           margin: 0 8px 0 0;                            
+                        }
+                        color: var(--ztc-text-text-2);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s18);
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px; 
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .social-area {
+                ul {
+                    li {
+                        display: inline-block;
+                        a {
+                            height: 32px;
+                            width: 32px;
+                            text-align: center;
+                            line-height: 32px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: all .4s;
+                            color: var(--ztc-text-text-2);
+                            background: rgba(252, 235, 200, 0.50);
+                            margin: 0 4px 0 0;
+                            &:hover {
+                                background: var(--ztc-bg-bg-3);
+                                transition: all .4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*============= TEAM CSS AREA STARTS ===============*/

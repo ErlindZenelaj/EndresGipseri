@@ -1,0 +1,135 @@
+@use '../../utils/' as * ;
+
+/*============= WORKS CSS AREA ===============*/
+.works-section-area {
+    position: relative;
+    z-index: 1;
+    background: var(--ztc-bg-bg-2);
+
+    .step-by-step {
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 100%;
+            left: 0;
+            top: 10px;
+            background: var(--ztc-bg-bg-1);
+            z-index: -1;
+        }
+        .step-area {
+            margin-bottom: 30px;
+            h4 {
+                height: 20px;
+                width: 20px;
+                background: var(--ztc-bg-bg-3);
+                border-radius: 50%;
+            }
+            a {
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s20);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 20px; 
+                display: inline-block;
+                transition: all .4s;
+                &:hover {
+                    color: var(--ztc-text-text-4);
+                }           
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 28px;    
+                opacity: 0.8;      
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.choose3-section-area {
+    position: relative;
+    z-index: 1;
+    background: #F6F6F6;
+    .images-area {
+        .img1 {
+            img {
+                width: 450px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+        .img2 {
+            position: relative;
+            margin-top: -80px;
+            img {
+                width: 300px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+    }
+    .choose-pera-area {
+        padding: 0 0 0 40px;
+        @media #{$xs} {
+            padding: 0;
+            margin-top: 30px;
+        }
+        @media #{$md} {
+            padding: 0;
+            margin-top: 30px;
+        }
+        .list-area {
+            position: relative;
+            z-index: 1;
+            &:hover {
+                .icons {
+                    background: var(--ztc-bg-bg-6);
+                    transition: all .4s;
+                    transform: rotateY(-180deg);
+                    img {
+                        filter: brightness(0) invert(1);
+                        transition: all .4s;
+                    }
+                }
+            }
+            .icons {
+                height: 48px;
+                width: 48px;
+                text-align: center;
+                line-height: 48px;
+                border-radius: 50%;
+                transition: all .4s;
+                display: inline-block;
+                background: #F9E2D5;
+                position: absolute;
+                img {
+                    transition: all .4s;
+                }
+            }
+            .content {
+                padding-left: 70px;
+                a {
+                    color: var(--Text-Color, #03071E);
+                    font-family: var(--ztc-family-font1);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 18px; 
+                    transition: all .4s;
+                    display: inline-block;                  
+                }
+            }
+        }
+    }
+}
+/*============= WORKS CSS AREA ===============*/
