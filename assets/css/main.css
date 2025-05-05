@@ -612,6 +612,7 @@ Location:
   padding: 16px 20px;
   position: relative;
   z-index: 1;
+  min-width: 150px;
 }
 .header-btn1 i {
   margin-left: 4px;
@@ -10930,7 +10931,6 @@ Location:
   font-weight: var(--ztc-weight-bold);
   line-height: 16px;
   padding: 16px 16px;
-  margin-bottom: 20px;
 }
 .contact1-section-area .contact-boxarea .input-area input::-moz-placeholder {
   color: var(--Paragraph-Color, #6C757D);
@@ -10958,7 +10958,6 @@ Location:
   font-weight: var(--ztc-weight-bold);
   line-height: 16px;
   padding: 16px 16px;
-  margin-bottom: 20px;
   height: 168px;
 }
 .contact1-section-area .contact-boxarea .input-area textarea::-moz-placeholder {

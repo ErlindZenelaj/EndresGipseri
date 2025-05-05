@@ -20,7 +20,13 @@
     <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
 
+
+  <!--  tel input-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/css/intlTelInput.css" />
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
@@ -785,55 +791,90 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="contact-boxarea">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-area">
-                <p>First Name*</p>
-                <div class="space16"></div>
-                <input type="text" placeholder="First Name">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
+          <form id="contactForm">
+            <div class="contact-boxarea">
+              <div class="row">
+
+                <div class="col-lg-6">
+                  <div class="input-area mb-3">
+                    <p>First Name*</p>
+                    <div class="space16"></div>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <small class="error" id="firstNameError"></small>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="input-area mb-3">
+                    <p>Last Name*</p>
+                    <div class="space16"></div>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    <small class="error" id="lastNameError"></small>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="input-area mb-3">
+                    <p>Email Address*</p>
+                    <div class="space16"></div>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                    <small class="error" id="emailError"></small>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="input-area mb-3">
+                    <p>Phone Number*</p>
+                    <div class="space16"></div>
+                    <input id="phone" type="tel" name="phone" placeholder="Enter phone number">
+                    <small class="error" id="phoneError"></small>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="input-area mb-3">
+                    <p>Message*</p>
+                    <div class="space16"></div>
+                    <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+                    <small class="error" id="messageError"></small>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="input-area">
+                    <button type="submit" class="header-btn1" id="submitButton">
+                  <span class="btn-text">
+                    Send Now <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                      <span class="spinner" style="display: none;">
+                <i class="fa fa-spinner fa-spin"></i>
+                </span>
+                    </button>
+
+
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="input-area">
-                <p>Last Name*</p>
-                <div class="space16"></div>
-                <input type="text" placeholder="Last Name">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="input-area">
-                <p>Email Address*</p>
-                <div class="space16"></div>
-                <input type="email" placeholder="Email Name">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="input-area">
-                <p>Phone Number*</p>
-                <div class="space16"></div>
-                <input type="number" placeholder="Phone Number">
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="input-area">
-                <p>Message*</p>
-                <div class="space16"></div>
-                <textarea placeholder="Type your message..."></textarea>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="input-area">
-                <button type="submit" class="header-btn1">Send Now <i class="fa-solid fa-arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
-      </div>
     </div>
   </div>
 </div>
+
+<!--Thank you -->
+<div id="successModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Email has been sent!</h2>
+    <p>Thank you for contacting us. We'll get back to you shortly.</p>
+  </div>
+</div>
+
+<!--Thank you-->
+
 <!--===== CONTACT AREA ENDS =======-->
 
 <!--===== CTA AREA STARTS =======-->
@@ -945,6 +986,8 @@
 <script src="assets/js/plugins/slick-slider.js"></script>
 <script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/form.js"></script>
+
 
 </body>
 </html>
