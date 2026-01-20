@@ -6894,10 +6894,14 @@ Location:
   transition: all 0.4s;
 }
 .homepage1-body .header-area.homepage1 .header-elements .site-logo {
-  height: 32px;
-  width: 180px;
+  height: 60px;
+  width: 220px;
   -o-object-fit: contain;
      object-fit: contain;
+
+  a{
+    color: #FFFFFF;
+  }
 }
 .homepage1-body .header-area.homepage1 .header-elements .all-images-menu {
   display: flex;
@@ -11009,7 +11013,7 @@ Location:
 .cta1-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/all-images/bg/cta-bg1.png);
+  background-image: url(../img/panomaric.avif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
