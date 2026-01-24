@@ -50,7 +50,7 @@ ul, li{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 17px 0;
+    padding: 0;
     z-index: 9;
     
 }
@@ -81,7 +81,7 @@ ul, li{
     width: 100%;
     background:#F6F6EC;
     z-index: 99;
-    padding: 40px 30px;
+    padding: 20px 30px;
     left: -100%;
     top: 0;
     visibility: hidden;
