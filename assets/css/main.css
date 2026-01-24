@@ -3277,7 +3277,7 @@ Location:
     width: 635px;
     left: 0;
     top: -85px;
-    z-index: 99999;
+    z-index: 99999 !important;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -3304,7 +3304,6 @@ Location:
     .hero-section-area .slider-btn-area .btn1 button {
         width: 100%;
         top: -41px;
-        z-index: 99999;
     }
 }
 
@@ -3461,6 +3460,7 @@ Location:
 
     .hero-section-area .slider-btn-area .btn2 button::after {
         background: transparent;
+        display: none;
     }
 
     .hero-section-area .slider-btn-area .btn3 button {
