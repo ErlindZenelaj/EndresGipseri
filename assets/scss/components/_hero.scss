@@ -226,12 +226,12 @@
             font-weight: 700;
             line-height: 24px;
             display: inline-block;
-            transition: all .4s; 
-            padding: 38px;  
+            transition: all .4s;
+            padding: 38px;
             &.active{
                 background: var(--ztc-bg-bg-3);
                 color: var(--ztc-text-text-2);
-            }   
+            }
             @media screen and (min-width:2000px) {
                 width: 34.3% !important;
             }
