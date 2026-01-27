@@ -10,10 +10,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.bundle.css">
     <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+
 
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
 </head>
@@ -27,16 +34,14 @@
                 <div class="col-lg-12">
                     <div class="header-elements">
                         <div class="site-logo">
-                            <a href="index.html"><img src="assets/img/logo/main-logo-transparent.png" alt="main-logo"> A-Z BAU 24 GmbH</a>
+                            <a href="index.html" style="color: #03071E;"><img src="assets/img/logo/main-logo-transparent.png" alt="main-logo"> A-Z BAU 24 GmbH</a>
                         </div>
                         <div class="main-menu">
                             <ul>
-                                <li><a href="about.html">Home</a></li>
-                                <li><a href="blog.html">Über uns</a></li>
-                                <li><a href="service.html">So arbeiten wir</a></li>
-                                <li><a href="project.html">Kontaktieren</a></li>
-                                <li><a href="testimonial.html">Standort</a></li>
-                                <li><a href="contact.html">FAQ</a></li>
+                                <li><a href="index.html#home-page" class="custom-a">Home</a></li>
+                                <li><a href="index.html#about-us" class="custom-a">Über uns</a></li>
+                                <li><a href="index.html#information" class="custom-a">So arbeiten wir</a></li>
+                                <li><a href="index.html#contact" class="custom-a">Kontaktieren</a></li>
                             </ul>
                         </div>
                         <div class="btn-area">
@@ -48,6 +53,92 @@
         </div>
     </div>
 </header>
+
+<!--===== MOBILE HEADER STARTS =======-->
+<div class="mobile-header mobile-haeder1 d-block d-lg-none">
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="mobile-header-elements">
+                <div class="mobile-logo">
+                    <a style="color: #ffffff" href="index.html"><img src="assets/img/logo/main-logo1.png" alt="logo"></a>
+                </div>
+                <div class="mobile-nav-icon dots-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-sidebar mobile-sidebar1">
+    <div class="logosicon-area">
+        <div class="logos">
+            <img src="assets/img/logo/main-logo-transparent.png" alt="">
+        </div>
+        <div class="menu-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="mobile-nav mobile-nav1">
+        <ul class="mobile-nav-list nav-list1">
+            <li><a href="index.html#home-page">Home</a></li>
+            <li><a href="index.html#about-us">Über uns</a></li>
+            <li><a href="index.html#information">So arbeiten wir</a></li>
+            <li><a href="index.html#contact">Kontaktieren</a></li>
+        </ul>
+
+        <div class="allmobilesection">
+            <a href="index.html#contact"  class="header-btn1">Loslegen <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <div class="single-footer">
+                <h3>Kontaktdaten</h3>
+                <div class="footer1-contact-info">
+                    <div class="contact-info-single">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <a href="tel:+3(924)4596512">+3(924)4596512</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-single">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                    </div>
+
+                    <div class="single-footer">
+                        <h3>Unser Standort</h3>
+
+                        <div class="contact-info-single">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <a href="mailto:info@example.com" >55 East Birchwood Ave.Brooklyn, <br> New York 11201,United States</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-footer">
+                        <h3>Soziale Links</h3>
+
+                        <div class="social-links-mobile-menu">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--===== MOBILE HEADER STARTS =======-->
 
 <section class="legal-page">
     <div class="container">
@@ -119,23 +210,91 @@
     </div>
 </section>
 
+<!--===== FOOTER AREA STARTS =======-->
 <div class="footer1-section-area">
     <div class="container">
         <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo">
+                    <img src="assets/img/logo/main-logo-transparent.png" alt="main-logo">
+                    <div class="space24"></div>
+                    <p>Willkommen bei A-Z BAU GmbH – Qualität, saubere Handwerksarbeit und kompromisslose Verlässlichkeit sind das Fundament unseres Unternehmens.</p>
+                    <div class="space32"></div>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="footer-content">
+                    <h3>Dienstleistungen</h3>
+                    <div class="space8"></div>
+                    <ul class="custom-ul">
+                        <li>Bauen</li>
+                        <li>Renoviren</li>
+                        <li>Sanieren</li>
+                        <li>Malerarbeiten</li>
+                        <li>Trockenbau & gipseri</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <div class="footer-content2">
+                    <h3>Über Link</h3>
+                    <div class="space8"></div>
+                    <ul>
+                        <li><a href="index.html#home-page">Home</a></li>
+                        <li><a href="index.html#about-us">Über uns</a></li>
+                        <li><a href="index.html#information">So arbeiten wir</a></li>
+                        <li><a href="index.html#contact">Kontaktieren</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-form">
+                    <h3>Subscribe Our Newsletter</h3>
+                    <div class="space32"></div>
+                    <form action="#">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button type="submit" class="header-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-12">
                 <div class="copyright-area">
-                    <p>ⓒCopyright 2026 [[FIRMA]]. Alle Rechte vorbehalten</p>
+                    <p>ⓒCopyright 2026 A-Z BAU Gmbh. Alle Rechte vorbehalten</p>
                     <ul>
-                        <li><a href="impressum.html">Impressum</a> <span> | </span> <a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="/datenschutz.html">Datenschutz</a> <span> | </span>
+                            <a href="/impresum.html">Impresum</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--===== FOOTER AREA ENDS =======-->
 
 <script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
 <script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/swiper.bundle.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/form.js"></script>
 </body>
 </html>

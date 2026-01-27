@@ -4668,6 +4668,10 @@ Location:
     position: relative;
 }
 
+.homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .custom-a{
+    color: #03071E;
+}
+
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .tp-submenu .homemenu-thumb {
     transition: all 0.4s;
     position: relative;
